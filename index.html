@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/variables.css"/> <!-- 변수 파일이 먼저 로드 -->
+    <link rel="stylesheet" href="css/status-bar.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KoKoa Talk</title>
+    <!-- Font Awesome CSS 직접 링크로 변경 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i> <!-- fa-solid 사용 -->
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div> 
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fa-solid fa-battery-full fa-2x"></i> <!-- fa-solid 사용 -->
+            <i class="fa-solid fa-bolt"></i> <!-- fa-bolt 사용 -->
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text"> If you have a KaKao Acoount, log in with your email or phone number.   
+        </p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    
+</body>
+</html>
+
+
